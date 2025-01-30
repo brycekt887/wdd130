@@ -5,7 +5,28 @@ a {
     padding: 15px;
     color: black;
     font-size: 20px;
+    margin: 0 AUTO; 
 }
 img {
     width: 500px;
+    display:  block;
+    margin: 0 auto;
 }
+nav a {
+    padding 15px;
+    fount color: black;
+    fount size 20px;
+    text -decoration 
+    margin 15px;
+}
+    nav a :hover{
+        background-color: aliceblue;
+    
+    nav a footer 
+        background-color: blue;
+    
+    
+
+
+
+
