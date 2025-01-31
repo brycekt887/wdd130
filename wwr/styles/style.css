@@ -1,0 +1,89 @@
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+nav a{
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: none;
+}
+#hero-msg h1, #hero-msg h4{
+    text-align: center;
+}
+.button-box{
+    text-align: center;
+    
+}
+main section{
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+}
+body{
+    background-color:white;
+}
+header{
+    background-color: white;
+}
+nav a:hover{
+    background-color: gray;
+    color: white;
+
+}
+.book, .join{
+    text-decoration: none;
+    background-color: white;
+    color:darkred
+   
+
+}
+.book:hover, .join:hover{
+    background-color: lightgoldenrodyellow;
+    color:darkred
+
+}
+#background{
+    background-color: white;
+
+}
+.msg{
+    background-color: lightgrey;
+}
+footer{
+    background-color: lightgray;
+    color:black  
+
+}
+.home-title{
+    color:black
+}
+h4{
+    color: black;
+}
+.msg h2{
+    color:black
+}
+.msg p{
+    color:black
+}
+footer a{
+    text-decoration: none;
+    color:black
+   
+}
+footer a:hover{
+    color: black;
+}
+.icon{
+    width: 80px;
+}
+footer p {
+    font-size: 1.2em;
+}    
+ 
+footer p a:hover {
+    text-decoration: underline;
+}    
+         
