@@ -193,7 +193,6 @@ height: 400px;
   width: 600px; 
   height: 600px; 
   display: grid;
-  background-color: blue; 
   grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
 }
