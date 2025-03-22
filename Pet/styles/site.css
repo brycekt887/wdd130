@@ -1,0 +1,161 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sigmar&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #CBA328  ;
+  --secondary-color: #5C5346;
+  --accent1-color: #FFFFF0;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Sigmar";
+  --paragraph-font: "lato", "Open Sans"
+  , sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #CBA328 ;  /* headlines on a white background */ 
+  --headline-color-on-color: #FFFFF0; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #5C5346 ; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #5C5346; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #CBA328   ;
+  --nav-link-color: #CBA328 ;
+  --nav-background-color: #5C5346;
+  --nav-hover-link-color: lightgray;
+  --nav-hover-background-color: #5C5346 ;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+body {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+}
+
+header {
+  background-color: var(--nav-background-color);
+  padding: 15px 30px;
+}
+
+.grid1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.linkback {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.linkback a {
+  text-decoration: none;
+  color: var(--nav-link-color);
+  font-weight: bold;
+  font-family: var(--heading-font);
+  padding: 5px 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.linkback a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+/* sec part*/ 
+.main-section {
+    background: url('../images/golden.webp') no-repeat center center;
+    background-size: cover;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: flex-start; 
+    flex-grow: 1;
+  }
+  
+  
+  .content-wrapper {
+    max-width: 900px;
+    width: 100%;
+    padding-left: 40px; 
+  }
+  
+  .text-column {
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 30px;
+    border-radius: 10px;
+    color: var(--paragraph-color-on-color);
+    text-align: left;
+  }
+  
+ 
+  .text-column p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: bold;
+  }
+  
+  
+  .videos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  
+  .videos iframe {
+    flex: 1 1 48%;
+    min-width: 280px;
+    height: 200px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* third part */
+  .foot{
+    background-color: var(--nav-background-color);
+    color: var(--headline-color-on-color);
+    padding: 15px 30px;
+    font-family: var(--paragraph-font);
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:50px 50px;
+    justify-items: center; 
+    align-items: center;      
+    text-align: center;
+    width: 100%;  
+    row-gap: 6px;
+    box-sizing: border-box;  
+    font-size: 0.9rem;         
+  }
+.media{
+grid-row: 2/3;
+grid-column:1/1 ;
+
+
+
+}
+.copy{
+ grid-row:1/2 ;
+ grid-column:1/1 ;
+ 
+}
