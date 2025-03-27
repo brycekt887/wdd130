@@ -62,6 +62,7 @@ header {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  padding: 5px 10px;
 }
 
 .linkback a {
@@ -76,7 +77,6 @@ header {
 .linkback a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
-  padding: 5px 10px;
   border-radius: 4px;
 }
 /* sec part*/ 
@@ -93,7 +93,7 @@ header {
   .content-wrapper {
     max-width: 900px;
     width: 100%;
-    padding-left: 40px; 
+    margin: 0 auto; 
   }
   
   .text-column {
@@ -160,7 +160,7 @@ grid-column:1/1 ;
  
 }
 
-/* PAGE 2* footer copied form up above and slideshow is embeded to html */
+/* PAGE 2* footer copied from up above and slideshow is embeded to html */
 .grid3 {
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
@@ -181,6 +181,7 @@ height: 100%;
   text-align: center;
   position: relative;
   font-size:15px;
+  font:var(--paragraph-font);
   background-color: #5C5346;
   border-radius: 50px;
   box-shadow: 5px 5px 5px black;
