@@ -161,6 +161,19 @@ grid-column:1/1 ;
 }
 
 /* PAGE 2* footer copied from up above and slideshow is embeded to html */
+  .p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--paragraph-color-on-white);
+    font: var(--heading-font);
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+  }
+
+
+
 .grid3 {
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
@@ -201,6 +214,8 @@ height: 100%;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: #5c5346;
 
 }
 .p3{
@@ -237,3 +252,35 @@ height: 100%;
   grid-column: 3/4;
 }
 
+.p2::before,.p3::before,.p4::before,.p5::before,.p6::before,.p7::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(
+    45deg,
+    #ffcc00,
+    #ff0066,
+    #00ccff,
+    #33ff99,
+    #ffcc00
+  );
+  background-size: 300% 300%;
+  z-index: -1;
+  animation: borderAnim 5s linear infinite;
+  border-radius: 55px;
+}
+@keyframes borderAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
