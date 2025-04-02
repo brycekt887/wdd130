@@ -210,12 +210,15 @@ height: 100%;
 
 .p2 p, .p3 p, .p4 p, .p5 p, .p6 p, .p7 p    {
   width: 90%;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  margin: 0 auto;
+  padding: 20px;
   background-color: #5c5346;
+  overflow-wrap: break-word;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+  z-index: 1;
 
 }
 .p3{
@@ -283,4 +286,65 @@ height: 100%;
   100% {
     background-position: 0% 50%;
   }
+}
+  @media (max-width: 768px) {
+    .p2 p, .p3 p, .p4 p, .p5 p, .p6 p, .p7 p {
+      font-size: 14px;
+      padding: 15px;
+    }
+  
+    .grid3 {
+      grid-template-columns: 1fr; /* Stack the items vertically */
+    }
+  }
+/* page 3 css */
+.grid5 {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.grid5 h1 {
+  font-family: 'Sigmar', cursive;
+  color: #CBA328;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.grid5 p {
+  margin-bottom: 20px;
+}
+
+.grid5 button {
+  padding: 10px 20px;
+  background-color: #5C5346;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Review Section */
+.grid6 {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.review-box {
+  background-color: #FFFFF0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-title {
+  font-family: 'Sigmar', cursive;
+  color: #CBA328;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
