@@ -300,30 +300,44 @@ height: 100%;
 /* page 3 css */
 .grid5 {
   max-width: 800px;
-  margin: 40px auto;
+  margin: 60px auto;
+  padding: 20px;
   text-align: center;
 }
 
 .grid5 h1 {
-  font-family: 'Sigmar', cursive;
-  color: #CBA328;
-  font-size: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
   margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 .grid5 p {
-  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
 }
 
-.grid5 button {
-  padding: 10px 20px;
-  background-color: #5C5346;
-  color: white;
+.grid5 a button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #CBA328;
+  color: #fff;
   border: none;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
 }
 
-/* Review Section */
+.grid5 a button:hover {
+  background-color: #a8841c;
+  transform: translateY(-2px);
+}
+
+
 .grid6 {
   max-width: 1000px;
   margin: 40px auto;
@@ -343,7 +357,7 @@ height: 100%;
 }
 
 .review-title {
-  font-family: 'Sigmar', cursive;
+  font-family: 'Sigmar';
   color: #CBA328;
   font-weight: bold;
   margin-bottom: 10px;
